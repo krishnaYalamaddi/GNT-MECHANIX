@@ -1,0 +1,13 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: blue;
+$text-align: center;
+$size: 50px;
+$shadow: 5px 5px 3px;
+
+h1 {
+  font: 100% $font-stack;
+  color: $primary-color;
+  text-align: $text-align;
+  font-size: $size;
+  text-shadow: $shadow yellowgreen;
+}

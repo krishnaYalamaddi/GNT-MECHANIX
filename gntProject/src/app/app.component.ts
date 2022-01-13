@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gntProject';
+
+   people: string | number = 12345;
+   
 }
