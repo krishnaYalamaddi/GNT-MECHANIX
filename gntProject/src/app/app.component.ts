@@ -10,6 +10,7 @@ export class AppComponent {
 
   serverCreation = false;
   serverName = '';
+  username = '';
 
   constructor(){
     setTimeout(() => {
@@ -18,5 +19,12 @@ export class AppComponent {
   }
   onUpdateServer(event : Event){
     this.serverName = (<HTMLInputElement>event?.target).value;
+  }
+
+  onCreateServer(){
+    this.serverName = "Server was created with random IP address"
+  }
+  resetInput(){
+    
   }
 }

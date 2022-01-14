@@ -1,5 +1,11 @@
-<h1>GNT_MECHANIX</h1>
-<button class="btn btn-danger" [disabled]="!serverCreation">Create Server</button>
+<h1>GNT_MECHANIX</h1><hr>
+<div class="container">
+  <button class="btn btn-danger" [disabled]="!serverCreation" (click)="onCreateServer()">Create Server</button>
 
 <input type="text" class="form-control" (input)="onUpdateServer($event)">
+<input type="text" class="form-control" [(ngModel)]="serverName">
 {{serverName}}
+<label for="uname"></label>
+<input type="text" id="uname" class="form-control" [(ngModel)]="username">
+<button class="btn btn-primary" [disabled]="username===''" (click)="username = ''">reset</button>
+</div>
