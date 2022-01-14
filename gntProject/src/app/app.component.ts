@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'gntProject';
 
-   people: string | number = 12345;
-   
+  serverCreation = false;
+  serverName = '';
+
+  constructor(){
+    setTimeout(() => {
+      this.serverCreation = true;
+    },2000);
+  }
+  onUpdateServer(event : Event){
+    this.serverName = (<HTMLInputElement>event?.target).value;
+  }
 }
